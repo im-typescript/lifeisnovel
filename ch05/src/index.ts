@@ -98,7 +98,7 @@ console.log(mergedArray);
 import {range} from './utils/range';
 let numbers: number[] = range(1, 9 + 1);
 console.log(numbers);
- */
+*/
 
 // p. 120
 /*
@@ -121,7 +121,7 @@ import {fold} from './utils/fold';
 let numbers: number[] = range(1, 100 + 1);
 let result = fold(numbers, (result, value) => result + value, 0);
 console.log(result);
- */
+*/
 
 // p. 123
 /*
@@ -141,7 +141,7 @@ console.log(evenSum);
 
 let powerSum = fold(map(numbers, value => value * value), (powerSum, value) => powerSum + value, 0);
 console.log(powerSum);
- */
+*/
 
 // p. 127
 /*
@@ -216,7 +216,7 @@ let beforeSort = [6, 2, 9, 0];
 const afterSort = pureSort(beforeSort);
 console.log(beforeSort, afterSort);
 
- */
+*/
 
 // p. 135
 /*
@@ -231,7 +231,7 @@ console.log(mixedArray, objectsOnly);
  */
 
 // p. 136
-/*
+
 import {mergeArray} from "./utils/mergeArray";
 
 const mergedArray1: string[] = mergeArray(
@@ -244,10 +244,12 @@ const mergedArray2: number[] = mergeArray(
 );
 console.log(mergedArray2);
 
- */
+
 
 // p. 139
+/*
 import {doSomething} from "./utils/doSomething";
 
 const [result, errorMessage] = doSomething();
 console.log(result, errorMessage);
+ */

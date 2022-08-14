@@ -8,7 +8,7 @@ while(true) {
 	console.log(value);
 }
 
- */
+*/
 
 // p. 145
 /*
@@ -18,7 +18,7 @@ const iterator = new RangeIterable(1, 3 + 1);
 for(let value of iterator)
 	console.log(value);
 
- */
+*/
 
 // p. 147
 /*
@@ -26,7 +26,7 @@ import {StringIterable} from "./utils/StringIterable";
 for(let value of new StringIterable(['hello', 'world', '!']))
 	console.log(value);
 
- */
+*/
 
 // p. 148
 /*
@@ -86,9 +86,10 @@ for(let value of gen12345()){
 	console.log(value);
 }
 
- */
+*/
 
 // p. 155
+
 import {random, gen} from './utils/yield-return';
 const iter = gen();
 while(true) {
@@ -96,3 +97,4 @@ while(true) {
 	if(done) break;
 	console.log(value);
 }
+
