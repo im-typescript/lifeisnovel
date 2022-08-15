@@ -3,17 +3,24 @@ import {IUser} from "./IUser";
 import {getDataPromise} from "./getDataPromise";
 
 const App: React.FC = () => {
+    const limit = 1;
+    const [skip, setSkip] = useState(0);
     const [users, setUsers] = useState<IUser[]>([]);
-    useEffect(() => {
+    const onClick = () => {
         getDataPromise((receivedUsers: IUser[]) => {
+            setSkip(skip + limit);
             setUsers([...users, ...receivedUsers])
-        })(0, 1);
-    }, [])
+        })(skip, limit);
+    };
+    useEffect(onClick, []);
     return (
       <div className='App'>
-          {
-              JSON.stringify(users)
-          }
+          <p><button onClick={onClick}>more data...</button></p>
+          <p>
+              {
+                  JSON.stringify(users)
+              }
+          </p>
       </div>
     )
 }
